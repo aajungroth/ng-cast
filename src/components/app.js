@@ -2,10 +2,10 @@ angular.module('video-player')
 .component('app', {
   templateUrl: 'src/templates/app.html',
   controller: function() {
-    this.examplevideo = window.exampleVideoData;
+
+    this.videos = window.exampleVideoData;
+    this.onClick = function() {
+      console.log('this')
+    }
   }
 });
-// .controller('appCtrl', function($scope) {
-//    $scope.exampleVideos = window.exampleVideoData;
-//   // console.log(exampleVideos);
-// })
