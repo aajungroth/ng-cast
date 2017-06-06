@@ -6,4 +6,7 @@ angular.module('video-player')
     video: '<'
   }
 });
+// .controller('videoListCtrl', {
+
+// })
 //render each video
