@@ -2,11 +2,11 @@ angular.module('video-player')
 .controller('appCtrl', function () {
     this.videos = window.exampleVideoData;
     this.currentVideo = this.videos[0];
-    this.selectVideo = function(data) {
-      this.currentVideo = data
+    this.selectVideo = (video) => {
+      this.currentVideo = video;
     }
-    this.searchResults = function() {
-
+    this.searchResults = () => {
+      console.log('hello')
     }
 })
 .component('app', {
